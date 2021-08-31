@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Meal</title>
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/299455933d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Start header section -->
+
+    <header class="top-header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand logo" href="#">Cooking Master</a>
+
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-link nav-items" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link nav-items" href="#">About</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link nav-items" href="#">Recipe</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link nav-items" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--End header section  -->
+
+    <!-- meal search area start -->
+    <section class="meal-src-area">
+      <div class="container">
+        <div class="src-inp-group w-50 justify-content-lg-center mx-auto pt-5">
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            name=""
+            id="src-form"
+            placeholder="search for meal ...."
+          />
+          <button type="button" class="btn btn-success" id="src-btn">
+            Search
+          </button>
+        </div>
+        <div id="alert-msg" class="w-50 mx-auto mt-4">
+          <span></span>
+          <span
+            onclick="this.parentElement.style.display = 'none' "
+            id="close-btn"
+            >&times;</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- meal search area end -->
+
+    <!-- single meal area start -->
+    <section class="single-meal-details mt-5">
+      <div class="container">
+        <div class="card mx-auto" id="single-meal">
+          <div class="image">
+            <img src="" alt="" srcset="" id="meal-image" />
+            <!-- <img src="" alt="" srcset=""> -->
+            <span
+              id="close-btn2"
+              onclick="this.parentElement.parentElement.style.display = 'none'"
+              >&times;</span
+            >
+          </div>
+          <h2 id="meal-title" class="text-center pt-2">hello</h2>
+          <p class="ing">Ingredients</p>
+          <ul class="list-group list-group-flush" id="list-group"></ul>
+        </div>
+      </div>
+    </section>
+    <!-- single meal area end -->
+
+    <!-- start meal list area -->
+
+    <section class="meal-items-area">
+      <div class="container">
+        <div class="row g-3 mt-4" id="meal-list"></div>
+      </div>
+    </section>
+    <!-- end meal list area -->
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
